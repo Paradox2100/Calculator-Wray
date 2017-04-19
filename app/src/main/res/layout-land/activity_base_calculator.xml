@@ -14,8 +14,8 @@
         android:layout_column="1"
         android:background="#ADD8E6"
         android:textSize="10pt"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="15dp"/>
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
 
     <Button
         android:text="Clr"

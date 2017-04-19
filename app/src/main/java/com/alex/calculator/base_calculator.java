@@ -264,5 +264,19 @@ public class base_calculator extends AppCompatActivity {
 
             }
         });
+
+    }
+
+    @Override
+    protected void onSaveInstanceState (Bundle outState){
+        outState.putString("savedDisplay", calculatorDisplay.getText().toString());
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState){
+        super.onRestoreInstanceState(savedInstanceState);
+        calculatorDisplay.setText(savedInstanceState.getString("savedDisplay"));
+
     }
 }
